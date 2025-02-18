@@ -13,18 +13,31 @@
       <h1>
         <%= title %>
       </h1>
-        <hr>
+      <hr>
       <nav class="primary">
-          <% if(navItems) { %>
-                <% navItems.forEach(item => { %>
-                        <a href="http://localhost:3000<%= item.url %>"><%= item.label %></a>
-               <% }); %>
-          <% } %>
+        <% if(navItems) { %>
+              <% navItems.forEach(item => { %>
+                      <a href="http://localhost:3000<%= item.url %>"><%= item.label %></a>
+             <% }); %>
+        <% } %>
       </nav>
   </header>
+
   <main>
       <p>
         <%= message %>
+      </p>
+      <p>
+        <%= person.firstname %>
+      </p>
+      <p>
+        <%= person.lastname %>
+      </p>
+      <p>
+        <%= person.location.city %>
+      </p>
+      <p>
+        <%= person.location.country %>
       </p>
   </main>
 </body>
