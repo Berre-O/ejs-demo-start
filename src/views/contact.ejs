@@ -1,44 +1,19 @@
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
-  <link rel="stylesheet" href="/css/main.css">
-  <title>Mijn eerste EJS applicatie</title>
-</head>
-<body>
-  <header>
-      <h1>
-        <%= title %>
-      </h1>
-      <hr>
-      <nav class="primary">
-        <% if(navItems) { %>
-              <% navItems.forEach(item => { %>
-                      <a href="http://localhost:3000<%= item.url %>"><%= item.label %></a>
-             <% }); %>
-        <% } %>
-      </nav>
-  </header>
-
-  <main>
-      <p>
-        <%= message %>
-      </p>
-      <p>
-        <%= person.firstname %>
-      </p>
-      <p>
-        <%= person.lastname %>
-      </p>
-      <p>
-        <%= person.location.city %>
-      </p>
-      <p>
-        <%= person.location.country %>
-      </p>
-  </main>
-</body>
-</html>
+<h1>
+    <%= title %>
+</h1>
+</h1>
+<p>
+    <%= message %>
+</p>
+<p>
+    <%= person.firstname %>
+</p>
+<p>
+    <%= person.lastname %>
+</p>
+<p>
+    <%= person.location.city %>
+</p>
+<p>
+    <%= person.location.country %>
+</p>

@@ -1,0 +1,7 @@
+<nav class="primary">
+    <% if(navItems) { %>
+          <% navItems.forEach(item => { %>
+                  <a href="http://localhost:3000<%= item.url %>"><%= item.label %></a>
+         <% }); %>
+    <% } %>
+  </nav>
